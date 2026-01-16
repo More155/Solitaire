@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solitaire Klondlike</title>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+ <div class="game">
+    <div class="top-bar">
+      <div class="left-side">
+        <div id="stock" class="pile stock"></div>
+        <div id="waste" class="pile waste"></div>
+      </div>
+
+      <div class="right-side">
+        <div class="foundations">
+          <div class="foundation" id="foundation-heart"></div>
+          <div class="foundation" id="foundation-diamond"></div>
+          <div class="foundation" id="foundation-spade"></div>
+          <div class="foundation" id="foundation-club"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="board">
+      <div class="column" id="column-1"></div>
+      <div class="column" id="column-2"></div>
+      <div class="column" id="column-3"></div>
+      <div class="column" id="column-4"></div>
+      <div class="column" id="column-5"></div>
+      <div class="column" id="column-6"></div>
+      <div class="column" id="column-7"></div>
+    </div>
+  </div>
+  </div>
+
+   <div class="controls">
+    <button id="undo-btn">Undo</button>
+
+    <div class="hud">
+      <span id="timer">00:00</span>
+    </div> 
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
